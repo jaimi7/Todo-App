@@ -25,11 +25,17 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { useMeta } from "quasar";
 
 defineOptions({
   name: "MainLayout",
 });
+
+const metaData = {
+  title: "Todo App",
+};
+
+useMeta(metaData);
 
 const linksList = [
   {
